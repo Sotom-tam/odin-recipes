@@ -11,10 +11,11 @@
 .hero--section {
     display: flex;
     flex-direction: column;
-    padding: 10px 16% 10% 8%;
+    padding: 20px 16% 6% 8%;
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
     background-color: #1F2937;
+    width: 100%;
 }
 
 .navlink {
@@ -23,7 +24,7 @@
 
 .section2 {
     display: flex;
-    margin-top: 10%;
+    margin-top: 14%;
 }
 
 .main--text {
@@ -43,11 +44,15 @@
 .img {
     display: flex;
     align-items: center;
+    height: 1fr;
     justify-content: center;
+    padding: 20px;
     flex: 2;
     background-color: #727783;
     font-size: 18px;
-    color: #E5E7EB
+    color: #E5E7EB;
+    text-wrap: wrap;
+    text-align: center;
 }
 
 .information {
@@ -56,7 +61,7 @@
     color: #1F2937;
     flex-direction: column;
     align-items: center;
-    padding: 10px 10% 10% 5%;
+    padding: 10px 5% 10% 5%;
 }
 
 .information>h2 {
@@ -64,11 +69,17 @@
     font-weight: 800;
 }
 
+.stuff--group {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
 .stuff--container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px 25px;
+    margin: 10px 20px;
 }
 
 .stuff {
@@ -76,9 +87,8 @@
     height: 170px;
     border: 4px solid #3882F6;
     border-radius: 20px;
-
-
 }
+
 
 .stuff--container p {
     text-align: center;
@@ -124,9 +134,10 @@
 }
 
 .sign-up {
-    height: 10%;
+    height: 8%;
     width: 16%;
 }
+
 
 footer {
     padding: 35px;
@@ -135,4 +146,19 @@ footer {
     align-items: center;
     background-color: #1F2937;
     color: #F9F1F8;
+}
+
+@media screen and (max-width: 910px) {
+    .stuff--group {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .action--holder {
+        padding: 4% 6%;
+    }
+
+    .action--section {
+        padding: 5% 5%;
+    }
+
 }
